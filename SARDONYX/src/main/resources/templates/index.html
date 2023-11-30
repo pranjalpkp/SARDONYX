@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="header::header_link">
+    <meta charset="UTF-8">
+</head>
+<body>
+<nav th:replace="navbar::main_nav"></nav>
+
+
+<footer th:include="footer::footer_menu">
+
+    <script th:replace="footer::footer_link"></script>
+</footer>
+</body>
+</html>

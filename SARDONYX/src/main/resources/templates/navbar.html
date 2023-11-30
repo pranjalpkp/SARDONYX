@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header th:fragment="main_nav">
+        <section class="section-1">
+            <div><i class="fas fa-paper-plane"></i> Henderson Bowe PO Box 65212, Ranoa</div>
+            <div class="block-1">
+                <div><a href="#">office@gmail.com</a></div>
+                <div class="social-btn">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="logo"><h1><i class="fab fa-artstation"></i> Family Clinic</h1></div>
+            <div class="phone-apointment">
+                <div class="phone-number"><i class="fas fa-phone"></i>  120 580-5654</div>
+                <div class="appointment"><button type="button"> + Make an Appointment</button></div>
+            </div>
+        </section>
+
+        <nav>
+
+            <div id="toggle-btn">
+                <label for="toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+
+            <input type="checkbox" id="toggle">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> HOME</a></li>
+                <li><a href="#"><i class="fas fa-medkit"></i> SERVICES</a></li>
+                <li><a href="#"><i class="fas fa-user-md"></i> OUR DOCTORS</a></li>
+                <li><a href="#"><i class="fas fa-image"></i> GALLERY</a></li>
+                <li><a href="#"><i class="fas fa-address-book"></i> CONTACT US</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> MAKE A QUERY</a></li>
+                <li><a href="#"><i class="fas fa-question-circle"></i> ABOUT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+</html>
