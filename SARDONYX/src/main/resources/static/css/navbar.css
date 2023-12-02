@@ -1,128 +1,107 @@
-*{
-    font-family: poppins;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+*
+{   padding:0;
+    margin:0;
 
+}
 body{
-    margin: 0%;
-    background: linear-gradient(to bottom, #cc2b5e  , #753a88);
+background-image:url(school_bg.jpg);
+background-size:cover;
+background-position:center;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+.topbar
+{
+width:100%;
+height:40px;
+background-image: linear-gradient(to right top, #dff2b4, #7fbd9d, #368586, #0f4d62, #0a1a30);
+}
+.topbar .logo a{
+/*color:#fff;*/
+font-weight:600;
+font-size:2.1rem;
+text-decoration:none;
+float:left;
+}
+.topbar ul{
+display:inline-flex;
+list-style:none;
+color:#fff;
+float:right;
+margin-right:20px;
+margin-top:5px;
+}
+.topbar ul li
+{
+padding-right:15px;
+}
+.topbar ul li:hover{
+-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.menu-bar{
+background:#5d7149;
+text-align:center;
+height:90px;
+}
+.menu-bar ul{
+display:inline-flex;
+list-style:none;
+color:#fff;
+}
+.menu-bar ul li{
+width:150px;
+margin:15px;
+padding:15px;
+
+}
+.menu-bar ul li a{
+text-decoration:none;
+color:#fff;
+}
+.active, .menu-bar ul li:hover{
+background:#2bab0d;
+border-radius:3px;
+
+}
+.menu-bar .bi
+{
+margin-right: 8px;
+}
+.sub-menu-1{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+display:block;
+position:absolute;
+background:rgb(0,100,0);
+margin-top:15px;
+margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+display:block;
+margin 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+width:150px;
+padding:10px;
+border-bottom:1px dotted #fff;
+background:transparent;
+border-radius:0;
+text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color:#b2ff00;
 }
 
-section.section-1,section.section-2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: white;
-}
-
-div.block-1{
-    display: flex;
-    align-items: center;
-}
-
-div.block-1 div:first-child{
-    margin-right: 40px;
-}
-
-div.phone-apointment{
-    display: flex;
-    align-items: center;
-}
-
-div.social-btn ul li i{
-    font-size: 22px;
-    margin: 10px 7px;
-    color: dimgray;
-}
-
-div.social-btn ul li i:hover{
-    color: steelblue;
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    cursor: default;
-}
-
-li{
-    display: inline-block;
-}
-
-div.phone-number{
-    font-size: 18px;
-    padding: 5px 10px;
-    border: 1px solid grey;
-    border-radius: 20px;
-}
-
-div.phone-number i{
-    transform: rotateY(180deg);
-}
-
-div.appointment button{
-    border: none;
-    background-color: lightgreen;
-    font-size: 18px;
-    color: white;
-    padding: 10px 12px;
-    border-radius: 30px;
-    outline: none;
-    margin: 0px 15px;
-    transition: box-shadow 0.5s;
-}
-
-div.appointment button:hover{
-    box-shadow: 0px 0px 10px green;
-}
-
-nav{
-    background-color: lightgreen;
-}
-
-nav ul{
-    text-align: center;
-}
-
-nav li{
-    text-align: center;
-}
-
-nav ul li a{
-    font-size: 18px;
-    display: block;
-    color: black;
-    padding: 8px 10px;
-    margin: 0px 5px;
-    font-weight: 500;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-radius: 2px;
-    transition-property: border-bottom,background-color;
-    transition-duration: 0.4s;
-}
-
-nav ul li a:hover{
-    background-color: lightcyan;
-    border-bottom: 4px solid black;
-}
-
-#toggle{
-    display: none;
-}
-
-#toggle-btn{
-    display: none;
-    text-align: right;
-}
-
-#toggle-btn i{
-    font-size: 25px;
-    padding: 7px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
