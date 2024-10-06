@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-InkUrbanApplication<InkUrban>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.InkUrban.InkUrbanApplication",
+            "projectName": "InkUrban",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

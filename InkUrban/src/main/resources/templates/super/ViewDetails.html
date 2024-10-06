@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            padding: 30px;
+            margin-bottom: 50px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+            border-bottom: none;
+        }
+        .back-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">Contact Details</h2>
+        <div class="card">
+            <div class="card-header">
+                Contact Information
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-3">ID:</div>
+                    <div class="col-md-9" th:text="${contact.id}"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-3">First Name:</div>
+                    <div class="col-md-9" th:text="${contact.fname}"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-3">Email:</div>
+                    <div class="col-md-9" th:text="${contact.email}"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-3">Phone:</div>
+                    <div class="col-md-9" th:text="${contact.phone}"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-3">Subject:</div>
+                    <div class="col-md-9" th:text="${contact.subject}"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-3">Created Date:</div>
+                    <div class="col-md-9" th:text="${contact.created_date}"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-3">Message:</div>
+                    <div class="col-md-9" th:text="${contact.message}"></div>
+                </div>
+<!--                 <div class="row mb-3"> -->
+<!--                     <div class="col-md-3">Terms and Policy:</div> -->
+<!--                     <div class="col-md-9" th:text="${contact.terms_and_policy}"></div> -->
+<!--                 </div> -->
+                
+<!--                 <div class="row mb-3"> -->
+<!--                     <div class="col-md-3">Status:</div> -->
+<!--                     <div class="col-md-9" th:text="${contact.status}"></div> -->
+<!--                 </div> -->
+            </div>
+        </div>
+        <a class="btn btn-danger back-btn mt-3">Back</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script>
+        // JavaScript for back button
+        document.querySelector('.back-btn').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>

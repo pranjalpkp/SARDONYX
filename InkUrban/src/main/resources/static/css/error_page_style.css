@@ -1,0 +1,77 @@
+/*======================================================
+		error page  css start
+======================================================*/     
+
+
+.error-page .text-center h1,
+.error-page .text-center h3 {
+  margin: 10px;
+  cursor: default;
+}
+.error-page .text-center h1 .fade-in,
+.error-page .text-center h3 .fade-in {
+  animation: fadeIn 2s ease infinite;
+}
+.error-page .text-center h1 {
+  font-size: 8em;
+  transition: font-size 200ms ease-in-out;
+  border-bottom: 1px dashed black;
+}
+.error-page .access-text h1 {
+  font-size: 5em;
+}
+.error-page .text-center h1 span#digit1 {
+  animation-delay: 200ms;
+}
+.error-page .text-center h1 span#digit2 {
+  animation-delay: 300ms;
+}
+.error-page .text-center h1 span#digit3 {
+  animation-delay: 400ms;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error-page .error-text h1{
+color:red;
+}
+
+.error-page a.learn-more, .learn-more {
+	height: auto;
+    background: #3030300a;
+    border-radius: 1.625rem;
+	
+}
+@media (max-width:991px){
+.error-page .error-text h1 {
+    font-size: 6em;
+}
+.error-page .access-text h1 {
+  font-size: 3em;
+}
+.error-page h3 {
+    font-size: 22px;
+}
+}
+@media (max-width:767px){
+.error-page .error-text h1 {
+    font-size: 4em;
+}
+.error-page .access-text h1 {
+  font-size: 2em;
+}
+.error-page h3 {
+    font-size: 20px;
+}
+}
+
+
+/*======================================================
+		error page  css end
+======================================================*/     
